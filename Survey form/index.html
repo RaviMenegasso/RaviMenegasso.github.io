@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Formulário de Interesse </h1>
+      <p id="description" class="description text-center">
+        Complete o formulário com atenção.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nome</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Digite seu nome"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Digite um e-mail válido"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Idade</label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="14"
+          max="99"
+          class="form-control"
+          placeholder="Digite sua idade"
+        />
+      </div>
+      <div class="form-group">
+        <label id="phone-label" for="phone">Telefone</label>
+        <input
+          type="phone"
+          name="phone"
+          id="phone"
+          class="form-control"
+          placeholder="Digite um núemro de telefone válido"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="state-label" for="state">Estado</label>
+        <input
+          type="text"
+          name="state"
+          id="state"
+          class="form-control"
+          placeholder="Digite seu estado"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="city-label" for="city">Cidade</label>
+        <input
+          type="text"
+          name="city"
+          id="city"
+          class="form-control"
+          placeholder="Digite sua localidade"
+          required
+        />
+      </div> 
+
+      <div class="form-group">
+        <p>Você já participou de alguma organização anteriormente?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Selecione</option>
+          <option value="student">Sim</option>
+          <option value="job">Não</option>
+          
+        </select>
+      </div>
+      <div class="form-group">
+        <label id="organization-label" for="organization">Se sim, qual organização?</label>
+        <input
+          type="text"
+          name="organization"
+          id="organization"
+          class="form-control"
+          placeholder="Digite aqui."
+          required
+        />
+      </div>  
+
+      <div class="form-group">
+        <p>Qual é sua situação empregatícia?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="desempregado"
+            type="radio"
+            class="input-radio"
+            checked
+          />Desempregado</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="empregado"
+            type="radio"
+            class="input-radio"
+          />Empregado</label >
+      </div>
+      <div class="form-group">
+        <p>Descreva, em poucas palavras, seu interesse em participar da nossa organização.</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Descreva aqui."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+      Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+         
+</body>
+</html>
